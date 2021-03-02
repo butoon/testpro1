@@ -1,0 +1,17 @@
+cat: &cat
+ name: '花猫'
+ color: '黄色'
+ age: 4
+ gender: '母'
+ call: '喵喵叫'
+
+dog: &dog
+ name: '摩耶'
+ color: '白色'
+ age: 4
+ gender: '公'
+ call: '汪汪叫'
+
+
+default:
+ <<: *cat
