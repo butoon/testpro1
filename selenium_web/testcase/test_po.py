@@ -13,5 +13,5 @@ class TestLogin:
     @pytest.mark.parametrize('name, id, phone', [('lisi', 'iwde', '13546738293')])
     def test_login(self, name, id, phone):
         name_list = self.main.goto_contact_page().click_add_member().add_member(name, id, phone).get_member()
-        print(name_list)[]
+        print(name_list)[0]
         assert name in name_list
